@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./output.css" />
     <title>AliExpress</title>
   </head>
-  <body class="flex flex-col space-y-5">
+  <body class="flex flex-col space-y-5 overflow-x-hidden">
     <header class="flex flex-col space-y-5 mx-20">
       <section class="flex items-center space-x-4">
         <a href="./index.html" class="text-2xl font-semibold flex-[0.15]"
@@ -74,7 +74,7 @@
             <option value=""><a href="">hello</a></option>
           </select>
         </div>
-        <a href="">hello 1</a>
+        <a href="./page.html">Page</a>
         <a href="">hello 1</a>
         <a href="">hello 1</a>
         <a href="">hello 1</a>
@@ -137,7 +137,7 @@
       <div class="flex flex-col items-center">
         <!-- todays deals card -->
         <section class="flex justify-between w-full">
-          <div class="flex flex-col relative items-center">
+          <div class="flex flex-col relative items-center group ">
             <div>
               <h3 class="text-2xl font-bold">Bundle deals</h3>
               <p class="flex items-center space-x-2">
@@ -190,11 +190,11 @@
 
             <!-- float icon -->
             <span
-              class="absolute text-5xl bg-gray-500/80 h-16 w-16 text-white text-center left-0 top-48"
+              class="absolute text-5xl bg-gray-500/80 h-16 w-16 text-white text-center left-0 top-48 opacity-0 group-hover:opacity-100 transition duration-700 ease-in-out"
               >&lt;</span
             >
             <span
-              class="absolute text-5xl bg-gray-500/80 h-16 w-16 text-white text-center top-48 right-0"
+              class="absolute text-5xl bg-gray-500/80 h-16 w-16 text-white text-center top-48 right-0 opacity-0 group-hover:opacity-100 transition duration-700 ease-in-out"
               >&gt;</span
             >
             <div class="flex">
@@ -604,6 +604,97 @@
           </div>
         </section>
       </div>
+    </section>
+
+
+    <section class="mx-20 mt-5">
+      <section class="p-10 bg-[url(./testImage.png)] bg-cover bg-no-repeat w-full h-[500px] object-center space-y-7">
+        <!-- top section -->
+        <section class="text-white flex">
+          <div class="space-y-3 flex-1">
+            <h3 class="text-3xl font-semibold">AliExpress Business</h3>
+            <div class="flex space-x-3">
+              <p class="space-x-1"><span>$</span><span>Tax Exemptions</span></p>
+              <p class="space-x-1"><span>$</span><span>Tax Exemptions</span></p>
+              <p class="space-x-1"><span>$</span><span>Tax Exemptions</span></p>
+            </div>
+            <button class="bg-white text-black py-1.5 px-2 font-semibold">Shop now</button>
+          </div>
+          <div class="flex-1 space-y-10">
+            <div class="flex space-x-20">
+              <div class="border-l-3 leading-3 space-y-1 pl-2">
+                <h4 class="font-semibold text-xl">5M+</h4>
+                <p class="">Factory direct supply</p>
+              </div>
+              <div class="border-l-3 leading-3 space-y-1 pl-2">
+                <h4 class="font-semibold text-lg">5M+</h4>
+                <p class="">Factory direct supply</p>
+              </div>
+            </div>
+            <div class="flex space-x-20">
+              <div class="border-l-3 leading-3 space-y-1 pl-2">
+                <h4 class="font-semibold text-xl">5M+</h4>
+                <p class="">Factory direct supply</p>
+              </div>
+              <div class="border-l-3 leading-3 space-y-1 pl-2">
+                <h4 class="font-semibold text-lg">5M+</h4>
+                <p class="">Factory direct supply</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="flex space-x-10">
+          <!-- Group of cards -->
+          <div class="bg-white p-7">
+            <h3 class="text-xl font-bold text-center mb-2">Bulk Saver Hub</h3>
+            <div class="flex space-x-3">
+              <!-- card -->
+              <div class="w-[130px] hover:scale-105 transition-all ease-in-out duration-700 cursor-pointer">
+                <img class="w-full  h-[100px]" src="./image/download (2).jpg" alt="">
+                <p class="font-semibold">NGN 1,322.43</p>
+                <p class="text-xs text-gray-700">each,<br /> >3pcs</p>
+                <p class="text-xs">NGN 1,322.43 for retail</p>
+              </div>
+              <div class="w-[130px] hover:scale-105 transition-all ease-in-out duration-700 cursor-pointer">
+                <img class="w-full  h-[100px]" src="./image/download (2).jpg" alt="">
+                <p class="font-semibold">NGN 1,322.43</p>
+                <p class="text-xs text-gray-700">each,<br /> >3pcs</p>
+                <p class="text-xs">NGN 1,322.43 for retail</p>
+              </div>
+              <div class="w-[130px] hover:scale-105 transition-all ease-in-out duration-700 cursor-pointer">
+                <img class="w-full  h-[100px]" src="./image/download (2).jpg" alt="">
+                <p class="font-semibold">NGN 1,322.43</p>
+                <p class="text-xs text-gray-700">each,<br /> >3pcs</p>
+                <p class="text-xs">NGN 1,322.43 for retail</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-7">
+            <h3 class="text-xl font-bold text-center mb-2">Bulk Saver Hub</h3>
+            <div class="flex space-x-3">
+              <!-- card -->
+              <div class="w-[130px] hover:scale-105 transition-all ease-in-out duration-700 cursor-pointer">
+                <img class="w-full  h-[100px]" src="./image/download (2).jpg" alt="">
+                <p class="font-semibold">NGN 1,322.43</p>
+                <p class="text-xs text-gray-700">each,<br /> >3pcs</p>
+                <p class="text-xs">NGN 1,322.43 for retail</p>
+              </div>
+              <div class="w-[130px] hover:scale-105 transition-all ease-in-out duration-700 cursor-pointer">
+                <img class="w-full  h-[100px]" src="./image/download (2).jpg" alt="">
+                <p class="font-semibold">NGN 1,322.43</p>
+                <p class="text-xs text-gray-700">each,<br /> >3pcs</p>
+                <p class="text-xs">NGN 1,322.43 for retail</p>
+              </div>
+              <div class="w-[130px] hover:scale-105 transition-all ease-in-out duration-700 cursor-pointer">
+                <img class="w-full  h-[100px]" src="./image/download (2).jpg" alt="">
+                <p class="font-semibold">NGN 1,322.43</p>
+                <p class="text-xs text-gray-700">each,<br /> >3pcs</p>
+                <p class="text-xs">NGN 1,322.43 for retail</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
     </section>
   </body>
 </html>
